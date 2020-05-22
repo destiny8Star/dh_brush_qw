@@ -1,0 +1,72 @@
+/**index.wxss**/
+.box{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden
+}
+
+
+.i_box{
+  width: 100%;
+  height:100%;
+  position: relative;
+}
+.i_box1{
+  width: 100%;
+  height: calc(0.9375*1173rpx)
+}
+.i_box2{
+  width: 100%;
+  height: calc(0.9375*107rpx)
+}
+.i_box3{
+  width: 100%;
+  height: 100%;
+}
+.i_box4{
+  width: 280rpx;
+  height: 280rpx;
+  position: absolute;
+  top: 55rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto
+}
+.btn{
+  width: calc(0.9375*630rpx);
+  height: calc(0.9375*90rpx);
+  /* margin: calc(0.9375*90rpx) auto 0 */
+  margin: calc(0.9375*40rpx) auto 0
+}
+button{
+  width: 100%!important;
+  height: 100%;
+  line-height: calc(0.9375*90rpx);
+  border-radius: calc(0.9375*15rpx);
+  font-size: calc(0.9375*36rpx);
+  padding:0;
+  font-weight: normal
+}
+/* .i_bottom{
+  width: 100%;
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  font-size: 30rpx;
+  color: #666
+}
+.i_botItem,.i_botItem2{
+  align-items: center;
+  margin: 0 15rpx
+}
+.i_botItem image{
+   width: calc(0.9375*35rpx);
+   height: calc(0.9375*31rpx);
+   margin-right: 12rpx
+}
+.i_botItem2 image{
+   width: calc(0.9375*31rpx);
+   height: calc(0.9375*31rpx);
+   margin-right: 12rpx
+} */

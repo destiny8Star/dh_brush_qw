@@ -1,0 +1,88 @@
+/* pages/index/confirm/confirm.wxss */
+.cbox{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 120rpx;
+  position: relative;
+}
+.c_topIcon{
+  width: calc(0.9375*180rpx);
+  height: calc(0.9375*160rpx);
+  margin: 0 auto 85rpx;
+}
+.c_topTitc{
+ width: calc(0.9375*587rpx);
+  height: calc(0.9375*59rpx);
+  margin: 0 auto 22rpx;
+}
+.c_topTite{
+ width: calc(0.9375*260rpx);
+  height: calc(0.9375*35rpx);
+  margin: 0 auto 30rpx;
+}
+.c_amount{
+  width: 508rpx;
+  padding:16rpx 0 ;
+  margin: 0 auto 16rpx;
+  border-top: 1rpx solid #D8D8D8;
+  border-bottom: 1rpx solid #D8D8D8;
+  color:#333;
+  align-items: center
+}
+.c_cancel{
+    width: 508rpx;
+    margin: 0 auto;
+    color:#1AAD19;
+    font-size: 28rpx;
+    text-align: right;
+}
+.c_bot{
+  width: 100%;
+  height: calc(0.9375*296rpx);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.c_botBtn{
+  width: calc(0.9375*532rpx);
+  height: calc(0.9375*134rpx);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 48rpx;
+}
+
+.mask{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0
+}
+.mask_box{
+  width: 600rpx;
+  height: 700rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+  /* background-image: url("../../imgs/mer_mask.png"); */
+  /* background-size: cover;
+  background-position: center; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.qrBox{
+  width: 210rpx;
+  height: 210rpx;
+  position: absolute;
+  top: 315rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+}

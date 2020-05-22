@@ -1,0 +1,28 @@
+<!--pages/index/confirm/confirm.wxml-->
+<view class="cbox">
+   <view class="c_top">
+      <view class="c_topIcon"><image src="../../../imgs/con_icon.png"></image></view>
+      <view class="c_topTitc"><image src="../../../imgs/con_titc.png"></image></view>
+      <view class="c_topTite"><image src="../../../imgs/con_tite.png"></image></view>
+   </view>
+   <view class="c_amount flex_be">
+      <view style="font-size:28rpx">请支付</view>
+      <view style="font-size:60rpx;font-weight:bold">￥{{amount}}</view>
+   </view>
+   <view class="c_cancel" bindtap="goBack">取消</view>
+   <view class="c_bot">
+      <image src="../../../imgs/con_bg.png"></image>
+      <view class="c_botBtn" bindtap="openFace">
+        <image src="../../../imgs/con_btn.png"></image>
+      </view>
+   </view>
+     <!-- 弹框展示小程序二维码 -->
+   <view class="mask" bindtap="hideMask" hidden="{{isMask}}">
+      <view class="mask_box">
+            <image mode="scaleToFill" src="../../../imgs/mer_mask.png"/>
+            <view class="qrBox">
+               <image mode="scaleToFill" src="{{apiHost+'/public/mer/wx/get/qr/code/img?jwtStr='+token}}"/>
+            </view>
+      </view>
+   </view>
+</view>

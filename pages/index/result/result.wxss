@@ -1,0 +1,134 @@
+/* pages/result/result.wxss */
+page{
+  padding-top: calc(0.9375*180rpx)
+}
+.resbox{
+  width: 100%;
+}
+.res_top{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 110rpx
+}
+.res_topTit{
+  width: 100%;
+  text-align: center;
+  font-size: calc(0.9375*32rpx);
+  color: #1AAD19
+}
+.res_money{
+  width: 100%;
+  text-align: center;
+  font-size: 82rpx;
+}
+.res_fail{
+   width: 100%;
+  text-align: center;
+  font-size: 46rpx
+}
+.res_act{
+  width: 660rpx;
+  border: 1rpx  solid #E5E5E5;
+  border-left:0;
+  border-right: 0;
+  margin:20rpx auto 120rpx;
+  padding:25rpx 0;
+  font-size: 27rpx
+}
+.res_actItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4D4D4D;
+  margin-bottom: 19rpx
+}
+.res_actItem2{
+  color:#FFBE00;
+  margin-bottom: 0
+}
+.res_btn{
+  width: 340rpx!important;
+  height: 72rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  padding:0;
+  line-height:72rpx;
+  font-weight: normal;
+  position: fixed;
+  bottom:300rpx;
+  left: 0;
+  right: 0
+}
+
+/* 动画 */
+.spinner {
+  margin: 0 auto;
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  text-align: center;
+   
+  -webkit-animation: rotate 2.0s infinite linear;
+  animation: rotate 2.0s infinite linear;
+}
+ 
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #67CF22;
+  border-radius: 100%;
+   
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+ 
+.dot2 {
+  top: auto;
+  bottom: 0px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+ 
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+.or_bot2{
+  width: 700rpx;
+  height: 200rpx;
+  margin: 30rpx auto 0;
+  background-color: #999;
+  /* border-radius: 12rpx; */
+  overflow: hidden;
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.or_bot2_we{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+  position: absolute;
+  right: 147rpx;
+  top: 37rpx;
+}

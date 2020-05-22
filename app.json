@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/result/result",
+    "pages/behind/behind",
+    "pages/behind/login/login",
+    "pages/index/confirm/confirm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/behind/behind",
+        "text": "收款"
+      },
+      {
+        "pagePath": "pages/behind/login/login",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="box">
+   <view class="i_box" wx:if="{{!isNew}}">
+      <view class="i_box1"><image src="../../imgs/index.png" mode="aspectFill"></image></view>
+      <view class="i_box2"><image src="{{logo}}" mode="aspectFill"></image></view>
+   </view>
+   <view class="i_box" wx:if="{{isNew}}">
+      <view class="i_box3"><image src="../../imgs/i_hsh.png" mode="aspectFill"></image></view>
+      <view class="i_box4"><image src="{{apiHost+'/public/mer/wx/get/qr/code/img?jwtStr='+token}}" mode="aspectFill"></image></view>
+   </view>
+</view>
+<view class="btn"><button  type="primary" bindtap="openAft" >测试打开后屏142</button></view>
+<!-- <view class="btn" wx:if='{{isDev}}'><button  type="primary" bindtap="openAft" >测试打开后屏133</button></view> -->
+<!-- <view class="btn" wx:if='{{isDev}}'><button  type="primary" bindtap="isLoginOnFaceApp" >查看是否具有登录态</button></view>
+<view class="btn" wx:if='{{isDev}}'><button  type="primary" bindtap="faceLogin" >青蛙刷脸登录 </button></view>
+<view class="btn" wx:if='{{isDev}}'><button  type="primary" bindtap="mylogin" >wx.login </button></view>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button> -->
+    <!-- <view class="i_bottom flex_ce">
+        <view class="i_botItem flex">
+            <image src="../../imgs/wx_log.png"></image>
+            <text>微信支付</text> 
+         </view>
+        <view class="i_botItem2 flex">
+            <image src="../../imgs/sl_log.png"></image>
+            <text>刷了么</text>  
+        </view>
+    </view> -->

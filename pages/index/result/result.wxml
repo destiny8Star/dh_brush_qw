@@ -1,0 +1,52 @@
+<!--pages/result/result.wxml-->
+<block wx:if="{{status == 1}}">
+  <view class="resbox">
+    <view class="res_top">
+      <icon type="success" size="110rpx"></icon>
+      <view class="res_topTit">支付成功</view>
+    </view>
+    <view class="res_money">￥{{amount}}</view>
+    <view class="res_act">
+      <view class="res_actItem">
+        <text>原价</text>
+        <text>¥{{amount}}</text>
+      </view>
+      <!-- <view class="res_actItem res_actItem2">
+        <text>优惠</text>
+        <text>¥256669.20</text>
+      </view> -->
+    </view>
+  </view>
+</block>
+<block wx:if="{{status == 2}}">
+  <view class="resbox">
+    <view class="res_top">
+      <icon type="warn" size="110rpx"></icon>
+      <view class="res_topTit">支付失败</view>
+    </view>
+    <view class="res_fail">请联系收银员</view>
+  </view>
+</block>
+
+<block wx:if="{{status == 0}}">
+  <view class="resbox">
+    <view class="res_top">
+      <view class="spinner">
+        <view class="dot1"></view>
+        <view class="dot2"></view>
+      </view>
+    </view>
+    <view class="res_topTit">正在查询支付结果</view>
+  </view>
+</block>
+
+<!-- //回到首页 -->
+<button class="res_btn" type="primary" plain bindtap="goReturn">回到首页 {{num}}</button>
+<!-- //广告小程序 -->
+<view class="or_bot2" wx:if="isMask">
+    <image mode="scaleToFill" src="../../../imgs/v_we.png"/>
+    
+    <view class="or_bot2_we">
+        <image mode="scaleToFill" src="{{apiHost+'/public/mer/wx/get/qr/code/img?jwtStr='+token}}"/>
+    </view>
+</view>

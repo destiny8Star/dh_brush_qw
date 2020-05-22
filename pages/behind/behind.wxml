@@ -1,0 +1,10 @@
+<!--pages/behind.wxml-->
+<form bindsubmit="toHead">
+  <view class="btn_tip">金额</view> 
+  <view class="section flex_be">
+    <view class="inp_be">￥</view>
+    <input name="amount"  type="digit" focus="{{isfocus}}"  value="{{price}}" class="inp" adjust-position bindinput="limitInp" maxlength="9"/>
+    <view class="cancel" bindtap="cancel">取消</view>
+  </view>
+  <button formType="submit" type="primary" class="subBtn">收款</button>
+</form>
